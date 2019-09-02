@@ -66,14 +66,14 @@ def get_book_details(id, headers)
 
     return {
         'id' => id,
-        'author': 'William Shakespeare',
-        'year': 1595,
-        'type' => 'paperback',
-        'pages' => 200,
-        'publisher' => 'PublisherA',
-        'language' => 'English',
-        'ISBN-10' => '1234567890',
-        'ISBN-13' => '123-1234567890'
+        'drugSKUNo': 'DR1000',
+        'drugClass': 'Antibiotics',
+        'administrationRoute' => 'Oral',
+        'availableStrength' => '250mg, 500mg, 875mg',
+        'dosageForm' => 'Tablet, Powder',
+        'doseSchedule' => '12 hours',
+        'drugUnit' => 'mg',
+        'manufacturer' => 'BioPharm'
     }
 end
 
