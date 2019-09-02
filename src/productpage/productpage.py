@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
 #
 # Copyright 2017 Istio Authors
 #
@@ -280,7 +279,7 @@ def getProducts():
         {
             'id': 0,
             'title': 'Augmentin',
-            'descriptionHtml': 'Augmentin (amoxicillin and clavulanate) is a combination penicillin-type antibiotic used to treat a wide variety of bacterial infections. It works by stopping the growth of bacteria.'
+            'descriptionHtml': 'Augmentin is a combination penicillin type antibiotic used to treat a wide variety of bacterial infections. It works by stopping the growth of bacteria.'
         }
     ]
 
