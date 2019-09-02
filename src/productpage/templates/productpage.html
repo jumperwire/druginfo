@@ -308,7 +308,7 @@
             {% if review.rating: %}
             {% if review.rating.stars: %}
             {% for n in range(review.rating.stars)  %}
-            <svg viewbox="0 0 10 10 ">
+            <svg class="{{ review.rating.color }}" viewbox="0 0 10 10 ">
                 <use xlink:href="#star" /></svg>
             {% endfor %}
             {% for n in range(5 - review.rating.stars) %}
