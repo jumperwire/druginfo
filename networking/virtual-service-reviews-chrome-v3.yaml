@@ -17,5 +17,5 @@ spec:
   - route:
     - destination:
         host: reviews
-        subset: v1
+        subset: v2
 ---
