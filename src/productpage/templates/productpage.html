@@ -47,7 +47,7 @@
 
 
          {% if reviewsStatus == 200: %}   
-            <div class="reviews red">
+            <div class="reviews {{ reviews.color }}">
             <label for="review-show"><h4>Reviews</h4></label>
             {% for review in reviews.reviews %}
             <blockquote class="review">
