@@ -68,7 +68,7 @@ public class LibertyRestEndpoint extends Application {
     	result += "{";
     	result += "  \"reviewer\": \"Mike B.\",";
     	result += "  \"color\": \"" + star_color + "\",";
-    	result += "  \"text\": \"Felt better after 2 doses. It is a strong antibiotic. Unfortunately they also kill some good bacteria along with the bad.\"";
+    	result += "  \"text\": \"Felt better after 2 doses. It is a strong antibiotic.\"";
       if (ratings_enabled) {
         if (starsReviewer2 != -1) {
           result += ", \"rating\": {\"stars\": " + starsReviewer2 + ", \"color\": \"" + star_color + "\"}";
