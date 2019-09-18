@@ -46,12 +46,12 @@ public class LibertyRestEndpoint extends Application {
     private String getJsonResponse (String productId, int starsReviewer1, int starsReviewer2) {
     	String result = "{";
     	result += "\"id\": \"" + productId + "\",";
-        result += "\"color\": \"" + star_color + "\",";
     	result += "\"reviews\": [";
 
     	// reviewer 1:
     	result += "{";
     	result += "  \"reviewer\": \"Ronny A.\",";
+    	result += "  \"color\": \"" + star_color + "\",";
     	result += "  \"text\": \"This medication seems to be the only one that completely cures my symptoms.\"";
       if (ratings_enabled) {
         if (starsReviewer1 != -1) {
@@ -66,6 +66,7 @@ public class LibertyRestEndpoint extends Application {
     	// reviewer 2:
     	result += "{";
     	result += "  \"reviewer\": \"Mike B.\",";
+    	result += "  \"color\": \"" + star_color + "\",";
     	result += "  \"text\": \"Felt better after 2 doses. It is a strong antibiotic. Unfortunately they also kill some good bacteria along with the bad.\"";
       if (ratings_enabled) {
         if (starsReviewer2 != -1) {
