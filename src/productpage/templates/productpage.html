@@ -54,16 +54,17 @@
               <p>{{ review.text }}</p>
               
               <p class="reviewer">&mdash; {{ review.reviewer }}</p>
-            {% if review.rating: %}
-             {% if review.rating.stars: %}
-             {% for n in range(review.rating.stars)  %}
+              {% if review.rating: %}
+                {% if review.rating.stars: %}
+                  {% for n in range(review.rating.stars)  %}
             <svg viewbox="0 0 10 10 "><use xlink:href="#star"/></svg>
-             {% endfor %}
-             {% for n in range(5 - review.rating.stars) %}
+                  {% endfor %}
+                  {% for n in range(5 - review.rating.stars) %}
             <svg class="empty"  viewbox="0 0 10 10 "><use xlink:href="#star"/></svg>
-             {% endfor %}
+                  {% endfor %}
             </blockquote>
-            {% endif %}
+                {% endif %}
+              {% endif %}
             {% endfor %}
          {% else %}
             <p class="error">Error fetching product reviews</p>
